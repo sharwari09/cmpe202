@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=GumballMachineInterface
+comment0.text=\n\ Write\ a\ description\ of\ interface\ GumballMachineInterface\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=void\ insertQuarter()
+comment1.text=\n\ An\ example\ of\ a\ method\ header\ -\ replace\ this\ comment\ with\ your\ own\n\n\ @param\ \ y\ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ the\ result\ produced\ by\ sampleMethod\n
+comment2.params=
+comment2.target=void\ insertNickel()
+comment3.params=
+comment3.target=void\ insertDime()
+comment4.params=
+comment4.target=boolean\ hasQuarter()
+comment5.params=
+comment5.target=void\ turnCrank()
+numComments=6

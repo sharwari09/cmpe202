@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=GumballMachine50
+comment1.params=size
+comment1.target=GumballMachine50(int)
+comment2.params=
+comment2.target=void\ insertQuarter()
+comment3.params=coin
+comment3.target=void\ insertHalf(int)
+comment4.params=
+comment4.target=void\ turnCrank()
+comment5.params=
+comment5.target=boolean\ hasHalf()
+comment6.params=
+comment6.target=void\ insertNickel()
+comment7.params=
+comment7.target=void\ insertDime()
+comment8.params=
+comment8.target=boolean\ hasQuarter()
+numComments=9

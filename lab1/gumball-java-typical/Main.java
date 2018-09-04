@@ -2,21 +2,18 @@
 
 public class Main {
 
-	public static void main(String[] args) {
-		GumballMachine gumballMachine = new GumballMachine(5);
+    public static void main(String[] args) {
+        GumballMachine25 gumballMachine25 = new GumballMachine25(5);
+        GumballMachine50 gumballMachine50 = new GumballMachine50(5);
+        GumballMachineCommon gumballMachineCommon = new GumballMachineCommon(5);
+        
+        System.out.println(gumballMachine25);
 
-		System.out.println(gumballMachine);
+        gumballMachine25.insertQuarter();
+        gumballMachine25.insertNickel();
+        gumballMachine25.turnCrank();
 
-		gumballMachine.insertQuarter( 25 );
-		gumballMachine.turnCrank();
+        System.out.println(gumballMachine25);
 
-		System.out.println(gumballMachine);
-
-		gumballMachine.insertQuarter( 25 );
-		gumballMachine.turnCrank();
-		gumballMachine.insertQuarter( 25 );
-		gumballMachine.turnCrank();
-
-		System.out.println(gumballMachine);
-	}
+    }
 }
