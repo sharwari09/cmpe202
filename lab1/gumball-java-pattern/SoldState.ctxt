@@ -2,7 +2,7 @@
 comment0.target=SoldState
 comment1.params=gumballMachine
 comment1.target=SoldState(GumballMachine)
-comment2.params=v
+comment2.params=coin
 comment2.target=void\ insertCoin(int)
 comment3.params=
 comment3.target=void\ ejectCoin()

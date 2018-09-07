@@ -6,7 +6,7 @@ public class SoldState implements State {
             this.gumballMachine = gumballMachine;
         }
           
-        public void insertCoin(int v){
+        public void insertCoin(int coin){
             System.out.println("Please wait, we're already giving you a gumball!");
         }
            
@@ -22,8 +22,8 @@ public class SoldState implements State {
             if (gumballMachine.getCount() > 0) {
                 gumballMachine.releaseBall();
                 if (gumballMachine.getValueOfCoins() > 0) {
-                    int valueOfInsertedCoins = gumballMachine.getValueOfCoins();
-                    System.out.println("Returning " + valueOfInsertedCoins + " cents" );
+                    int valueOfCoins = gumballMachine.getValueOfCoins();
+                    System.out.println("Returning " + valueOfCoins + " cents" );
                     gumballMachine.setValueOfCoins(0);
                     }
                 gumballMachine.setState(gumballMachine.getnoSufficientCoinsState());             

@@ -24,7 +24,7 @@ public class GumballMachine{
                 
                 boolean isCentAcceptable(int coin){
                     List<Integer> acceptableCentsList = Arrays.asList(acceptableCents);
-                    if(acceptableCentsList.contains(coin) == false){
+                    if(!acceptableCentsList.contains(coin)){
                         System.out.println("Please insert Quarters in One Quarter Gumball Machine");
                         return false;
                     }
@@ -38,7 +38,7 @@ public class GumballMachine{
                 }
                 boolean isCentAcceptable(int coin){
                     List<Integer> acceptableCentsList = Arrays.asList(acceptableCents);
-                    if(acceptableCentsList.contains(coin) == false){
+                    if(!acceptableCentsList.contains(coin)){
                         System.out.println("Please insert Quarters in Two Quarters Gumball Machine !");
                         return false;
                     }
@@ -52,7 +52,7 @@ public class GumballMachine{
                 }
                 boolean isCentAcceptable(int coin){
                     List<Integer> acceptableCentsList = Arrays.asList(acceptableCents);
-                    if(acceptableCentsList.contains(coin) == false){
+                    if(!acceptableCentsList.contains(coin)){
                         System.out.println("Please insert Quarters, Dimes and Nickels in Slot Gumball Machine");
                         return false;
                     }

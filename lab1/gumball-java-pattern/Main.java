@@ -12,23 +12,23 @@ public class Main {
         OneQuarterGumballMachine oneQuarterGumballMachine =new OneQuarterGumballMachine(10);
         TwoQuarterGumballMachine twoQuarterGumballMachine =new TwoQuarterGumballMachine(15);
         
-        System.out.println("\n **** Testing for One Quarter Cents machine **** ");
+        System.out.println("\n **** Testing One Quarter Cents machine **** ");
         oneQuarterGumballMachine.insertQuarter();
         oneQuarterGumballMachine.turnCrank();
         
-        System.out.println("\n\n **** Testing for Two Quarter Cents machine ****");
+        System.out.println("\n\n **** Testing Two Quarter Cents machine ****");
         twoQuarterGumballMachine.insertQuarter();
         twoQuarterGumballMachine.insertQuarter();
         twoQuarterGumballMachine.turnCrank();
-        gumballMachine.insertNickel();
-        gumballMachine.insertDime();
-        gumballMachine.insertDime();
-        gumballMachine.insertDime();
-        gumballMachine.insertNickel();
-        gumballMachine.insertDime();
-        gumballMachine.turnCrank();
+        twoQuarterGumballMachine.insertNickel();
+        twoQuarterGumballMachine.insertDime();
+        twoQuarterGumballMachine.insertDime();
+        twoQuarterGumballMachine.insertDime();
+        twoQuarterGumballMachine.insertNickel();
+        twoQuarterGumballMachine.insertDime();
+        twoQuarterGumballMachine.turnCrank();
 
-        System.out.println("\n\n **** Testing for Slot machine ****");
+        System.out.println("\n\n **** Testing Slot machine ****");
         gumballMachine.insertQuarter();
         gumballMachine.turnCrank();
         gumballMachine.insertNickel();
