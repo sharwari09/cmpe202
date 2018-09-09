@@ -8,4 +8,4 @@ Three types of Gumball Machines are implemented:
 
 - Two Quarter Gumball Machine: Accepts only Quarters. Ejects one Gumball once amount is 2 Quarters are accepted(50 cents amount is reached).
 
-- Slot Gumball Machine: Accepts Nickels, Dimes and Quarters. Ejects one Gumball once amount 50 cents amount is reached.
+- Slot Gumball Machine: Accepts Nickels, Dimes and Quarters. Ejects one Gumball once 50 cents amount is reached.
