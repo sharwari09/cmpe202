@@ -1,7 +1,7 @@
 # cmpe202
 Lab1 for CMPE 202 
 
-Implementation of Code Caintainability in the working of Gumball Machine
+Implementation of Code Maintainability in the working of Gumball Machine
 
 Three types of Gumball Machines are implemented:
 - One Quarter Gumball Machine: Accepts only Quarter. Ejects one Gumball once amount is Quarter is accepted(25 cents amount is reached).
