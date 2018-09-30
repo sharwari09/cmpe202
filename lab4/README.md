@@ -70,10 +70,10 @@ Responsibilites:
  
  Design Patterns used:
  
- - Singleton Pattern:
+ - _Singleton Pattern_:</br>
  Single configuration manager/handler that is ReservationHandle is used here that handles all problems instead of creating multiple managers. Also, this pattern restricts the instantiation of a class to one object which ReservationHandle that will is the driver class and handles all the reservation work. 
 
-- State Pattern:
+- _State Pattern_:</br>
 In this scenario, the WaitlistHandler executes different behaviors according to the Table State. If the state returned by TableHandler is _available_, then the WaitlistHandler will perform _addcustomerToWaitlist_ operation and the state will get changed to _unavailable_, and if the state returned is _unavailable_ then WaitlistHandler will perform _allocateTableToCustomer_ operation and the state will change to _available_. In this State design pattern, an WaitlistHandler object’s behavior is the result of state returned by TableHandler, and the behavior gets changed at runtime depending on the state.
 
 
