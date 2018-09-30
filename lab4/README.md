@@ -19,7 +19,7 @@ Responsibilites:
   **_Class SignUp_**:
 
 Responsibilites:
- - Accept table booking request from Customer</br>
+ - Gets reservation details from customers</br>
  
  Collaborators:
  - Customer</br>
