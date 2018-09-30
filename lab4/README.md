@@ -11,36 +11,60 @@ Responsibilites:
  
  Collaborators:
  - ReservationHelper</br></br>
- ------------------------------------------------------------------------------------------------------------------------------
+ - SignUp</br></br>
  
- **_Class ReservationHelper_**:
+ _Has Customer name, number, number of people in party_
+ 
+ ------------------------------------------------------------------------------------------------------------------------------
+  **_Class SignUp_**:
 
 Responsibilites:
  - Accept table booking request from Customer</br>
- - Notify Customer for availability of table</br>
- - Assign table to the eligible customer</br>
- - Get unoccupied tables</br>
  
  Collaborators:
- - WaitingListHelper</br>
  - Customer</br>
  - TableHelper</br>
  ------------------------------------------------------------------------------------------------------------------------------
  
- **_Class TableHelper_**:
+ **_Class ReservationHandler_**:
 
 Responsibilites:
- - Retreive unoccupied table</br>
+ - Accept table booking request from Customer</br>
+ - Notify Customer for availability of table</br>
+ - Allocate table to the eligible (_first in waiting queue and matching chair count of the table_) customer</br>
+ - Get available table status</br>
+ 
+ Collaborators:
+ - WaitingListHandler</br>
+ - Customer</br>
+ - TableHandler</br>
+ ------------------------------------------------------------------------------------------------------------------------------
+ **_Class WaitingListHandler_**:
+
+Responsibilites:
+ - Add customer to waiting queue</br>
+ - Remove customer to waiting queue</br>
+ 
+ Collaborators:
+ - ReservationHandler</br>
+ 
+  _Has Wait List Queue_
+
+ ------------------------------------------------------------------------------------------------------------------------------
+ 
+ **_Class TableHandler_**:
+
+Responsibilites:
+ - Get unoccupied/available table</br>
+ - Get unoccupied/available table chair count</br>
  
  Collaborators:
  - Table</br>
  ------------------------------------------------------------------------------------------------------------------------------
  
   **_Class Table_**:
- 
- Responsibilites:
- - Get table occupied status</br>
- - Get table chair count</br>
+
+ _Has Table ID, number of chairs of table_
 
  ------------------------------------------------------------------------------------------------------------------------------
  
