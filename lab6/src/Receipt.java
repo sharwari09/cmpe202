@@ -1,24 +1,46 @@
+import com.sun.tools.corba.se.idl.constExpr.Or;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Receipt implements PrintOrder {
 
+    Order order;
+    List<Items> itemsToBeAdded = new ArrayList<>();
 
-    String name;
-    double price;
-    int quantity;
-    double total;
+    public Receipt()
+    {
+        double total = 0;
+        order = new Order("12/12/2016", "1:46:54 PM", 45);
 
-    public Receipt() {
-        System.out.println("Receipt Display");
-        this.name = "LBB";
-        this.price = 5.59;
-        this.quantity = 1;
-        this.total = price * quantity;
+        Items item1 = new Items("LBB", 5.59, 1,true);
+        Items item2 = new Items("LTL CAJ", 2.79, 1,false);
+
+        itemsToBeAdded.add(item1);
+        itemsToBeAdded.add(item2);
+
+        System.out.println(itemsToBeAdded.toString());
+        order.setItemsInOrder(itemsToBeAdded);
+
     }
- /** Consider String array for toppings and print he toppings*/
 
     @Override
-    public String printOrderReceipt() {
-        return this.name + "                   $" + this.price+ "\n\n"
-                + "Sub. Total:           $" + this.total;
+    public void printOrderReceipt() {
+        System.out.println(order.date + "    " + order.time);
+        System.out.println("Order Number " + order.orderNumber);
+
+        for (Items item : order.items) {
+            System.out.println(item.name);
+            if (item.haveToppings){
+                System.out.println("{{{{ "+ item.meat +"}}}}");
+                for (String topping: item.toppingsOnTopBun)
+                    System.out.println(topping);
+                for (String topping: item.toppingsOnMeat)
+                    System.out.println("->| " + topping);
+            }
+            System.out.println("\n");
+        }
+
     }
 
 }

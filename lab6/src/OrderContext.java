@@ -1,12 +1,14 @@
 public class OrderContext {
 
     private PrintOrder printorderstrategy;
+    //private PrintOrder addItemToOrderstrategy;
 
     public OrderContext(PrintOrder printorderstrategy){
         this.printorderstrategy = printorderstrategy;
     }
 
-    public String executeprintOrderStrategy(){
-        return printorderstrategy.printOrderReceipt();
+    public void executeprintOrderStrategy(){
+
+        printorderstrategy.printOrderReceipt();
     }
 }

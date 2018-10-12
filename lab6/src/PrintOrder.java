@@ -1,4 +1,5 @@
 public interface PrintOrder {
 
-    public String printOrderReceipt();
+    public void printOrderReceipt();
+
 }
