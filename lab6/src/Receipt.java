@@ -1,36 +1,13 @@
-import com.sun.tools.corba.se.idl.constExpr.Or;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class Receipt implements PrintOrder {
 
-    Order order;
-    List<Items> itemsToBeAdded = new ArrayList<>();
-
-    public Receipt()
-    {
-        double total = 0;
-        order = new Order("12/12/2016", "1:46:54 PM", 45);
-
-        Items item1 = new Items("LBB", 5.59, 1,true);
-        Items item2 = new Items("LTL CAJ", 2.79, 1,false);
-
-        itemsToBeAdded.add(item1);
-        itemsToBeAdded.add(item2);
-
-        System.out.println(itemsToBeAdded.toString());
-        order.setItemsInOrder(itemsToBeAdded);
-
-    }
 
     @Override
-    public void printOrderReceipt() {
+    public void printOrderReceipt(Order order) {
         System.out.println(order.date + "    " + order.time);
         System.out.println("Order Number " + order.orderNumber);
 
         for (Items item : order.items) {
-            System.out.println(item.name);
+            System.out.println(item.name + "\t\t\t" + item.total);
             if (item.haveToppings){
                 System.out.println("{{{{ "+ item.meat +"}}}}");
                 for (String topping: item.toppingsOnTopBun)
@@ -40,6 +17,7 @@ public class Receipt implements PrintOrder {
             }
             System.out.println("\n");
         }
+        System.out.println("Sub. Total:\t\t:" + order.getOrderSubtotal());
 
     }
 

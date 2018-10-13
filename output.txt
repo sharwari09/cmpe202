@@ -1,0 +1,35 @@
+
+Displaying Receipt..
+12/12/2016    1:46:54 PM
+Order Number 45
+LBB			5.59
+{{{{ Bacon}}}}
+Lettuce
+Tomato
+->| G Onion
+->| JALA Grilled
+
+
+LTL CAJ			2.79
+
+
+Sub. Total:		8.379999999999999
+
+
+Displaying Packing Slip..
+12/12/2016    1:46:54 PM
+Order Number 45
+LBB
+Lettuce
+Tomato
+->| G Onion
+->| JALA Grilled
+{{{{ Bacon}}}}
+
+
+LTL CAJ
+
+
+
+Process finished with exit code 0
+

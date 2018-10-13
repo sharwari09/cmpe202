@@ -1,21 +1,18 @@
-import java.util.ArrayList;
-import java.util.List;
-
-public class Items {
+class Items {
     String name;
     double price;
     int quantity;
     double total;
 
-    public String[] toppingsOnTopBun = {"Lettuce", "Tomato"};
+    String[] toppingsOnTopBun;
+    String[] toppingsOnMeat;
 
-    public String[] toppingsOnMeat = {"G Onion", "JALA Grilled"};
+    String meat;
 
-    String meat = "Bacon";
-    Boolean haveToppings;
+    boolean haveToppings;
 
-    public Items(String name, double price, int quantity,
-                 Boolean haveToppings) {
+    Items(String name, double price, int quantity,
+                 boolean haveToppings) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
@@ -23,15 +20,16 @@ public class Items {
         this.haveToppings = haveToppings;
     }
 
-    public void setToppings(String[] toppingsOnTopBun,
-                            String[] toppingsOnMeat){
+    void settoppingsOnTopBun(String[] toppingsOnTopBun){
 
         this.toppingsOnTopBun = toppingsOnTopBun;
+    }
 
+    void settoppingsOnMeat(String[] toppingsOnMeat){
         this.toppingsOnMeat = toppingsOnMeat;
     }
 
-    public void setMeat(String meat){
+    void setMeat(String meat){
         this.meat = meat;
     }
 }
