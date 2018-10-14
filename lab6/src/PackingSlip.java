@@ -2,6 +2,7 @@ public class PackingSlip implements PrintOrder {
 
     @Override
     public void printOrderReceipt(Order order) {
+        System.out.println("   FIVE GUYS    ");
         System.out.println(order.date + "    " + order.time);
         System.out.println("Order Number " + order.orderNumber);
 
