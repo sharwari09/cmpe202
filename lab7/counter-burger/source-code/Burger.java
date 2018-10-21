@@ -17,6 +17,8 @@ public class Burger extends LeafDecorator
             if ( "2/3lb.".equals(options[i]) ) this.price += 11.50 ;
             if ( "1lb.".equals(options[i]) ) this.price += 15.50 ;
             if ( "In A Bowl".equals(options[i]) ) this.price += 1.50 ;
+            if ( "Organic Bison*".equals(options[i]) ) this.price += 4.00 ;
+            if ( "Ahi Tuna".equals(options[i]) ) this.price += 4.00 ;
         }
     }
     

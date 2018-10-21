@@ -1,19 +1,27 @@
-public class Sauce extends LeafDecorator
+
+/**
+ * Write a description of class PremiumCheese here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class PremiumCheese extends LeafDecorator
 {
+    // instance variables - replace the example below with your own
     private String[] options ;
     
     
-    public Sauce( String d )
+    public PremiumCheese( String d )
     {
         super(d) ;
     }
     
-    // 1 sauce free, extra +.50
+    // per premium cheese +1.50
     public void setOptions( String[] options )
     {
         this.options = options ;
-        if ( options.length > 1 )
-            this.price += (options.length-1) * 0.50 ;
+        if ( options.length > 0 )
+            this.price += options.length * 1.50 ;
     }
     
     public String getDescription() 
@@ -26,5 +34,4 @@ public class Sauce extends LeafDecorator
         }        
         return desc ;
     }
-    
 }
