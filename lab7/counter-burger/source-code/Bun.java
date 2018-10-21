@@ -16,7 +16,7 @@ public class Bun extends LeafDecorator
         super(d) ;
     }
     
-    // No extra cost for bun type
+    // extra costs for bun types such as Gluten-Free Bun, Pretzel Bun and Hawaiian Bun
     public void setOptions( String[] options )
     {
         this.options = options ;
