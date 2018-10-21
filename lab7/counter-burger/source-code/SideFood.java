@@ -16,7 +16,7 @@ public class SideFood extends LeafDecorator
         super(d) ;
     }
     
-    // Every side 3.00
+    // $3.00 for every side food ordered
     public void setOptions( String[] options )
     {
         this.options = options ;

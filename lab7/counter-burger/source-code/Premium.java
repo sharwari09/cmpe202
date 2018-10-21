@@ -8,12 +8,13 @@ public class Premium extends LeafDecorator
         super(d) ;
     }
     
-    // premium topping +1.50
+    // Add $+1.50 for every premium topping
     public void setOptions( String[] options )
     {
         this.options = options ;
         for ( int i = 0; i<options.length; i++ )
         {
+            //$3 for Marinated Tomatoes
             if ( "Marinated Tomatoes".equals(options[i]) ) 
                 this.price += 3  ;
             else 
