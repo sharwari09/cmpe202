@@ -10,16 +10,19 @@ public class App {
     private CreditCardExp exp;
     private CreditCardCVC cvc;
     private int count;
-
+    private CreditCardNumDecorator numDeco;
+    private CreditCardExpDecorator expDeco;
     public App() {
 
         screen = new Screen();
         num = new CreditCardNum();
         exp = new CreditCardExp();
         cvc = new CreditCardCVC();
+        numDeco = new CreditCardNumDecorator(num);
+        expDeco = new CreditCardExpDecorator(exp);
 
-        screen.addSubComponent(num);
-        screen.addSubComponent(exp);
+        screen.addSubComponent(numDeco);
+        screen.addSubComponent(expDeco);
         screen.addSubComponent(cvc);
 
         count = 0;

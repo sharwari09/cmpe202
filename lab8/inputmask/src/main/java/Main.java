@@ -24,9 +24,7 @@ class Main
             System.out.flush() ;
             System.out.println( app.display() ) ;
             System.out.print( "Key (Digit or X or Delete) => " ) ;
-            //String ch = c.readLine() ;
-            Scanner sc = new Scanner(System.in);
-            String ch = sc.nextLine();
+            String ch = c.readLine() ;
             app.key( ch ) ;
         }
     }
