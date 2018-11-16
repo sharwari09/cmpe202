@@ -16,7 +16,7 @@ From the Client class, the desired strategy is passed and the discount is calcul
 
 ### Lambda Implementation
 ------------------------------------------------------------------------------------------------------------------------------
-In the Lambda implementation, it is less verbose to implement the same functionlatiy as above. By leveraging Lambda in Java8, we can get the same work done by creating a Discount interface class and provide **no** implementations to it.
+In the Lambda implementation, it is less verbose to implement the same functionality as above. By leveraging Lambda in Java8, we can get the same work done by creating a Discount interface class and provide **no** implementations to it.
 
 By creating a Client.java, we will create a List (_of type Discount interface_) of all our desired Strategies and provide their complete implementations in a lambda function. Once the List of Strategies is created, iterate over each strategy and invoke the method declared in the Discount interface. 
 
